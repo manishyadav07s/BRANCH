@@ -1,0 +1,395 @@
+  /* Reset */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    padding: 0px 20px;
+}
+
+/* Header Section */
+header {
+    background-color: #fff4c3;
+    padding: 10px 20px;
+    
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-text{
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-between;
+}
+
+.logo-text>span{
+    font-size: 2rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#icon-list{
+    display: none;
+}
+header a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 15px;
+    font-size: 14px;
+}
+
+ .social-icons a {
+    margin: 0 5px;
+    font-size: 18px;
+    color: #333;
+}
+
+ .shop-button {
+    background-color: #f7d1e0;
+    color: #333;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+ .shop-button:hover {
+    background-color: #f3bbc9;
+}
+
+/* Navigation */
+nav {
+    /* text-align: center; */
+    padding: 10px 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+nav>a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight:500;
+    font-size: 14px;
+}
+nav>a:hover{
+    text-decoration: underline;
+}
+
+/* Main Section */
+main{
+    padding: 20px 0px;
+}
+.main-text>h1 {
+    padding: 20px 0px;
+    font-size: 28px;
+    font-weight: bold;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.main-text>h1>span {
+    background-color: #e6f2e0;
+    padding: 5px;
+}
+
+.halloween-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 360px;
+    /* text-align: center; */
+}
+.card img {
+    width:100%;
+    height: auto;
+}
+.card-content {
+    padding: 15px;
+}
+.card-content p {
+    font-size: 12px;
+    color: gray;
+}
+.card-content h3 {
+    margin: 10px 0 0;
+    font-size: 18px;
+}
+
+.subscription-container {
+    margin-top: 2%;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px dashed #888;
+    border-bottom: 1px dashed #888;
+    max-width: 1100px;
+    width: 100%;
+}
+.subscription-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+    color: #333;
+    margin-bottom: 15px;
+}
+.input-container {
+    display: flex;
+    justify-content: center;
+}
+.email-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+    width: 60%;
+    font-size: 16px;
+}
+.subscribe-btn {
+    background-color: #e3a3b7;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+.subscribe-btn:hover {
+    background-color: #d18fa4;
+}
+
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    nav {
+        font-size: 12px;
+    }
+
+    main h1 {
+        font-size: 28px;
+    }
+    .halloween-section {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header a {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .social-icons a{
+        display: none;
+    }
+    /* #icon-list{
+        display: block;
+    } */
+
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    main h1 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 600px) {
+    .input-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .email-input {
+        width: 100%;
+    }
+    .subscribe-btn {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    max-width: 1500px;
+    /* margin: 20px auto; */
+    padding: 20px;
+}
+.posts {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-columns: repeat(auto-fit);
+    gap: 30px;
+}
+.post-1{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.post-2{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.post-3{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.post {
+    background: white;
+    padding: 15px;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.post img {
+    width: 100%;
+    border-radius: 10px;
+    height: 80%;
+}
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.profile, .subscribe, .recent-posts {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.profile img {
+    width: 50px;
+    border-radius: 50%;
+}
+.subscribe input {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-top: 10px;
+}
+.subscribe button {
+    background: #e3a3b7;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* ------------------------- */
+
+.posts-container {
+    width: 90%;
+    max-width: 800px;
+}
+.posts-container h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+.posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+.post2 {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+.post2:hover {
+    transform: scale(1.05);
+}
+.post2 img {
+    width: 100%;
+    height: auto;
+}
+.post2 p {
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+    color: #333;
+}
+
+.footer {
+    width: 100%;
+    background-color: #fdf3c1;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+.footer h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+.footer nav {
+    margin-bottom: 10px;
+}
+.footer nav a {
+    text-decoration: none;
+    color: #666;
+    margin: 0 10px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+.footer nav a:hover {
+    color: #000;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.social-icons a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.social-icons a:hover {
+    background-color: #555;
+}
